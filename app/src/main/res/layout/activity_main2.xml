@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".main">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#191970"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.466"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/cabeza" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:onClick="cambiar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logout" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Último Video"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+
+        android:textSize="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/videoView" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="304dp"
+        android:layout_height="91dp"
+        android:background="#00000000"
+        android:ems="10"
+        android:enabled="false"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="Dulce Guissepina cumple 466 dias. Faltan 55 minutos para su comida. Sin nuevos avisos"
+        android:textAlignment="center"
+        android:textColor="#191970"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Interactua con tu bebe"
+        android:textSize="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText7" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:onClick="popup"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn"
+                app:srcCompat="@drawable/cam" />
+
+            <EditText
+                android:id="@+id/editText8"
+                android:layout_width="154dp"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:ems="10"
+                android:enabled="false"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity=""
+                android:inputType="textMultiLine"
+                android:text="Activa tu cámara "
+                android:textAlignment="center"
+                android:textColor="#191970"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:onClick="popup"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3"
+                app:srcCompat="@drawable/voz" />
+
+            <EditText
+                android:id="@+id/editText10"
+                android:layout_width="154dp"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:ems="10"
+                android:enabled="false"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity=""
+                android:inputType="textMultiLine"
+                android:text="Graba Mensaje"
+                android:textAlignment="center"
+                android:textColor="#191970"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:onClick="popup"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView5"
+                app:srcCompat="@drawable/song" />
+
+            <EditText
+                android:id="@+id/editText11"
+                android:layout_width="154dp"
+                android:layout_height="109dp"
+                android:background="#00000000"
+                android:ems="10"
+                android:enabled="false"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity=""
+                android:inputType="textMultiLine"
+                android:text="Pon Música"
+                android:textAlignment="center"
+                android:textColor="#191970"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:onClick="popup"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView5"
+                app:srcCompat="@drawable/info" />
+
+            <EditText
+                android:id="@+id/editText12"
+                android:layout_width="154dp"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:ems="10"
+                android:enabled="false"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity=""
+                android:inputType="textMultiLine"
+                android:text="Revisa o Registra datos de importancia sobre su cuidado"
+                android:textAlignment="center"
+                android:textColor="#191970"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
