@@ -75,9 +75,11 @@ public class MainActivity extends AppCompatActivity {
     public void cambiar(View v) {
         final EditText us, pas;
 
+        Toast.makeText(getApplicationContext(),"Bienvenido ",Toast.LENGTH_LONG).show();
+        Intent v1 = new Intent(getApplicationContext(), main.class);
+        startActivity(v1);
 
-
-        us = (EditText) findViewById((R.id.editText));
+        /*us = (EditText) findViewById((R.id.editText));
         pas = (EditText) findViewById((R.id.editText2));
         String x = CN.r_datos("https://apisweb.000webhostapp.com/prueba/nativa_babycare/login.php?", us.getText().toString(), pas.getText().toString());
         if (x.equalsIgnoreCase("ok")) {
@@ -90,5 +92,5 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(),"Intenta de nuevo",Toast.LENGTH_LONG).show();
             us.setText("");pas.setText("");
 
-        }
+        }*/
 }}
