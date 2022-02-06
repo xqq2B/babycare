@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void cambiar(View v) {
         final EditText us, pas;
-
+as
         Toast.makeText(getApplicationContext(),"Bienvenido ",Toast.LENGTH_LONG).show();
         Intent v1 = new Intent(getApplicationContext(), main.class);
         startActivity(v1);
