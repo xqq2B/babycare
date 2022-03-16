@@ -198,4 +198,4 @@ Esta política de privacidad se refiere sólo a esta Aplicación, a menos que se
 
 Última revisión: 16 marzo 2022
 
-iubenda aloja este contenido y únicamente recoge los Datos Personales que sean estrictamente necesarios para prestar este servicio.
+[Política de privacidad de.pdf](https://github.com/xqq2B/babycare/files/8267351/Politica.de.privacidad.de.pdf)
